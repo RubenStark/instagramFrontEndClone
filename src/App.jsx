@@ -11,6 +11,7 @@ import Signup from './Pages/Signup'
 import Notifications from './Pages/Notifications'
 import Profile from './Pages/Profile'
 import WatchStories from './Pages/WatchStories'
+import { useSelector } from 'react-redux'
 
 function App() {
   const [profile, setProfile] = useState({
@@ -19,11 +20,12 @@ function App() {
   })
 
   const [userProfile, setUserProfile] = useState({})
+  const url = useSelector ((state) => state.url.value)
 
   useEffect(() => {
     const token = localStorage.getItem('token')
     if (token) {
-      fetch('http://127.0.0.1:8000/api/get-user-profile/', {
+      fetch(url + 'get-user-profile/', {
         headers: {
           Authorization: `Bearer ${token}`,
         },

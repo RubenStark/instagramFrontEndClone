@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit'
 export const url = createSlice({
   name: 'url',
   initialState: {
-    value: "https://instagrambackendclone.herokuapp.com/api/",
+    value: "https://instabackendclone2.herokuapp.com/api/",
   },
 })
 
