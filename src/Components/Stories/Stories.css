@@ -1,0 +1,46 @@
+.Story{
+    max-width: 470px;
+    background-color: white;
+    border: 1px solid #ccc;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: #aaaaaa;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #888888;
+}
+.Story-Avatar{
+    height: 80%;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+}
+
+.Story-Header{
+    height: 75px;
+    width: 70px;
+    padding: 10px;
+    padding-right: 0px;
+    padding-top: 15px;
+    align-items: center;
+}
+.Story-Header:hover{
+    scale: 1.1;
+    transition: 0.3s;
+}
+.Story-Username{
+    margin-left: 10px;
+    font-weight: lighter;
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+}

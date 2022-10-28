@@ -1,0 +1,79 @@
+.Create-Container {
+    margin: auto;
+    background-color: white;
+    height: 80vh;
+    max-width: 900px;
+    display: flex;
+    border: 1px solid #c9c9c9;
+}
+
+.Create-Header {
+    margin: auto;
+    height: 30px;
+    margin-top: 40px;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #c9c9c9;
+    gap: 20px;
+}
+
+.Create-h1 {
+    font-size: 20px;
+    font-weight: 100;
+}
+.Create-h2 {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.Create-Post{
+    color: rgb(0, 149, 246);
+    font-size: 15px;
+    font-weight: 100;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    
+}
+.Create-Image {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Create-Desciption {
+    width: 40%;
+    height: 100%;
+    border-left: 1px solid #c9c9c9;
+}
+
+.Create-Textarea {
+    width: 99%;
+    height: 99%;
+    border: none;
+    resize: none;
+    font-size: 18px;
+    font-weight: 100;
+    outline: none;
+}
+input[type="file"] {
+    display: none;
+}
+.Create-Input{
+    margin: auto;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #c9c9c9;
+    background-color: rgb(0, 149, 246);
+    color: white;
+}
+.Create-Image-Preview{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

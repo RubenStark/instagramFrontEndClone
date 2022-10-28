@@ -1,0 +1,91 @@
+.Post{
+    max-width: 470px;
+    background-color: white;
+    border: 1px solid #ccc;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.Post-Header{
+    height: 15px;
+    display: flex;
+    align-items: center;
+    padding: 20px 10px;
+}
+.Avatar{
+    height: 250%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.Username, .Comments{
+    margin: 7px 10px;
+    font-weight: lighter;
+    font-size: 14px;
+}
+.Comments{
+    color: rgba(34, 34, 34, 0.548);
+}
+.PostImage{
+    width: 100%;
+    object-fit: contain;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.Caption-Container{
+    padding: 5px 10px;
+    font-weight: lighter;
+    font-size: 12px;
+}
+.Post-Actions{
+    display: flex;
+    padding: 10px;
+    height: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.Post-Action{
+    margin-right: 10px;
+    cursor: pointer;
+}
+.Action{
+    height: 100%;
+    object-fit: contain;
+}
+.Liked-By{
+    font-weight: lighter;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.Post-Comment{
+    display: flex;
+    margin: 10px;
+}
+.Comment-Input{
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    font-weight: lighter;
+    margin: 0 10px;
+}
+.Comment-Input::placeholder{
+    color: rgba(34, 34, 34, 0.548);
+}
+.Comment-Input:focus{
+    border-bottom: 1px solid blue;
+    /*make the placeholder text disappear when the input is focused*/
+    
+}
+.Comment-Input:focus::placeholder{
+    opacity: 0;
+}
+
+.Comment-Button{
+    border: none;
+    outline: none;
+    background-color: white;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #0095f6;
+    cursor: pointer;
+}
