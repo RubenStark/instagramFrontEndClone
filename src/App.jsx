@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useState } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 
 import './App.css'
 
@@ -47,7 +47,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Header profile={profile} userProfile={userProfile} />
         <Routes>
           <Route path="/" element={<Home profile={userProfile} />} />
@@ -59,7 +59,7 @@ function App() {
           <Route path="/create" element={<Create />} />
 
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
 
     </div>
   )
